@@ -13,9 +13,15 @@ app.use(cors(
 ));
 app.use(express.json())
 
-mongoose.connect('mongodb+srv://jgrey2550:test123@cluster0.wn5bc4z.mongodb.net/?retryWrites=true&w=majority');
+//typle databasea
+mongoose.connect('mongodb+srv://jgrey2550:Rq5GF6hwVRYtuutF@cluster0.qgvh47s.mongodb.net/?retryWrites=true&w=majority');
+
+//my first database
+//mongoose.connect('mongodb+srv://jgrey2550:test123@cluster0.wn5bc4z.mongodb.net/?retryWrites=true&w=majority');
+
+//their database
 //mongoose.connect('mongodb+srv://yousaf:test123@cluster0.g4i5dey.mongodb.net/?retryWrites=true&w=majority');
-//testtest
+
 app.get("/", (req, res) => {
     res.json("Hello");
 })
